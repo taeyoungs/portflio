@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = styled('header')`
   position: fixed;
@@ -13,6 +14,7 @@ const Header = styled('header')`
   font-size: 18px;
   background-color: rgba(20, 20, 20, 0.8);
   box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.8);
+  font-family: 'Nanum Gothic';
 `;
 
 const List = styled('ul')`
@@ -40,15 +42,29 @@ const MLink = styled(Link)`
   }
 `;
 
+const ALink = styled('a')`
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  :hover {
+    opacity: 0.8;
+  }
+`;
+
 export default withRouter(({ location: { pathname } }) => (
   <Header>
-    {console.log(pathname)}
     <List>
       <Item current={pathname === '/'}>
-        <MLink to="/">홈</MLink>
+        <MLink smooth to="/#home">
+          홈
+        </MLink>
       </Item>
       <Item current={pathname === '/about'}>
-        <MLink to="/about">소개</MLink>
+        <MLink smooth to="/#about">
+          소개
+        </MLink>
       </Item>
       <Item current={pathname === '/project'}>
         <MLink to="/project">프로젝트</MLink>

@@ -3,11 +3,14 @@ import styled from 'styled-components';
 
 const Bout = styled('div')`
   height: 400px;
-  width: 100%;
+  width: calc(100% - 400px);
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
   justify-content: center;
+  justify-items: center;
   align-content: center;
+  align-items: center;
   padding: 30px;
   line-height: 1.5;
 `;
@@ -15,18 +18,20 @@ const Bout = styled('div')`
 const ItemOne = styled('div')`
   font-weight: 600;
   font-size: 24px;
-  padding: 20px;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  font-weight: 600;
 `;
 
 const ItemTwo = styled('div')`
   font-size: 18px;
-  padding: 20px;
+  padding: 40px;
 `;
 
 const About = () => {
   return (
     <>
-      <Bout>
+      <Bout id="about">
         <ItemOne>About 테스트 블럭</ItemOne>
         <ItemTwo>
           충분히 열락의 있음으로써 위하여 설레는 석가는 심장의 되려니와, 보는
