@@ -53,24 +53,33 @@ const ALink = styled('a')`
   }
 `;
 
-export default withRouter(({ location: { pathname } }) => (
+export default withRouter(({ location: { hash } }) => (
   <Header>
     <List>
-      <Item current={pathname === '/'}>
+      <Item current={hash === '#home'}>
         <MLink smooth to="/#home">
           홈
         </MLink>
       </Item>
-      <Item current={pathname === '/about'}>
+      <Item current={hash === '#about'}>
         <MLink smooth to="/#about">
           소개
         </MLink>
       </Item>
-      <Item current={pathname === '/project'}>
-        <MLink to="/project">프로젝트</MLink>
+      <Item current={hash === '#skill'}>
+        <MLink smooth to="/#skill">
+          기술
+        </MLink>
       </Item>
-      <Item current={pathname === '/contact'}>
-        <MLink to="/contact">연락처</MLink>
+      <Item current={hash === '#project'}>
+        <MLink smooth to="/#project">
+          프로젝트
+        </MLink>
+      </Item>
+      <Item current={hash === '#contact'}>
+        <MLink smooth to="/#contact">
+          연락처
+        </MLink>
       </Item>
     </List>
   </Header>
