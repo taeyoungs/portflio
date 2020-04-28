@@ -13,6 +13,16 @@ const Bout = styled('div')`
   align-items: center;
   padding: 30px;
   line-height: 1.5;
+  @media (max-width: 1024px) {
+    width: calc(100% - 300px);
+    height: 280px;
+    padding: 20px;
+  }
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 180px;
+    padding: 10px;
+  }
 `;
 
 const Title = styled('div')`
@@ -21,11 +31,25 @@ const Title = styled('div')`
   padding: 10px;
   border-bottom: 2px solid black;
   font-weight: 600;
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
+  }
 `;
 
 const Content = styled('div')`
   font-size: 18px;
   padding: 40px;
+  @media (max-width: 1024px) {
+    font-size: 17px;
+    padding: 25px;
+  }
+  @media (max-width: 375px) {
+    font-size: 8px;
+    padding: 15px;
+  }
 `;
 
 const About = () => {

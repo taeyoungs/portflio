@@ -6,6 +6,12 @@ const Title = styled('div')`
   justify-content: center;
   font-weight: 600;
   font-size: 30px;
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+  @media (max-width: 375px) {
+    font-size: 15px;
+  }
 `;
 
 const TitleContent = styled('span')`
@@ -17,9 +23,15 @@ const SkillList = styled('div')`
   width: 100%;
   height: 800px;
   background-color: #f2f2f2;
-  margin: 20px 0;
+  margin: 30px 0;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  @media (max-width: 1024px) {
+    height: 600px;
+  }
+  @media (max-width: 375px) {
+    height: 300px;
+  }
 `;
 
 const Item = styled('div')`
@@ -38,6 +50,14 @@ const Item = styled('div')`
       opacity: 1;
     }
   }
+  @media (max-width: 1024px) {
+    width: 100px;
+    height: 100px;
+  }
+  @media (max-width: 375px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 const Msg = styled('div')`
@@ -53,6 +73,16 @@ const Msg = styled('div')`
   border-radius: 50px;
   font-size: 20px;
   font-weight: 600;
+  @media (max-width: 1024px) {
+    width: calc(100% - 35px);
+    height: calc(100% - 35px);
+    font-size: 18px;
+  }
+  @media (max-width: 375px) {
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    font-size: 11px;
+  }
 `;
 
 const Css3 = styled('div')`
@@ -62,6 +92,14 @@ const Css3 = styled('div')`
   background-image: url('icon/css3.png');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 85px;
+    height: 85px;
+  }
+  @media (max-width: 375px) {
+    width: 35px;
+    height: 35px;
+  }
 `;
 
 const Html5 = styled('div')`
@@ -70,6 +108,14 @@ const Html5 = styled('div')`
   background-image: url('icon/html5.png');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 75px;
+    height: 75px;
+  }
+  @media (max-width: 375px) {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 const Java = styled('div')`
@@ -79,7 +125,13 @@ const Java = styled('div')`
   background-image: url('icon/java.png');
   background-position: center center;
   background-size: cover;
-  & div {
+  @media (max-width: 1024px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media (max-width: 375px) {
+    width: 25px;
+    height: 25px;
   }
 `;
 
@@ -90,6 +142,14 @@ const Jscript = styled('div')`
   background-image: url('icon/javascript.png');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 85px;
+    height: 85px;
+  }
+  @media (max-width: 375px) {
+    width: 35px;
+    height: 35px;
+  }
 `;
 
 const ReactIcon = styled('div')`
@@ -99,6 +159,14 @@ const ReactIcon = styled('div')`
   background-image: url('icon/react.png');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 75px;
+    height: 75px;
+  }
+  @media (max-width: 375px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 const JqueryIcon = styled('div')`
@@ -107,6 +175,14 @@ const JqueryIcon = styled('div')`
   background-image: url('icon/Jquery.png');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 55px;
+    height: 55px;
+  }
+  @media (max-width: 375px) {
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 const NodeIcon = styled('div')`
@@ -115,6 +191,14 @@ const NodeIcon = styled('div')`
   background-image: url('icon/node.png');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 55px;
+    height: 55px;
+  }
+  @media (max-width: 375px) {
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 const MongoIcon = styled('div')`
@@ -123,6 +207,14 @@ const MongoIcon = styled('div')`
   background-image: url('icon/mongodb.png');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 65px;
+    height: 65px;
+  }
+  @media (max-width: 375px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 const OracleIcon = styled('div')`
@@ -132,15 +224,23 @@ const OracleIcon = styled('div')`
   background-image: url('icon/oracledb.jpg');
   background-position: center center;
   background-size: cover;
+  @media (max-width: 1024px) {
+    width: 85px;
+    height: 85px;
+  }
+  @media (max-width: 375px) {
+    width: 35px;
+    height: 35px;
+  }
 `;
 
-const MysqlIcon = styled('div')`
-  width: 100px;
-  height: 100px;
-  background-image: url('icon/mysql.png');
-  background-position: center center;
-  background-size: cover;
-`;
+// const MysqlIcon = styled('div')`
+//   width: 100px;
+//   height: 100px;
+//   background-image: url('icon/mysql.png');
+//   background-position: center center;
+//   background-size: cover;
+// `;
 
 const GithubIcon = styled('div')`
   width: 75px;
@@ -148,14 +248,14 @@ const GithubIcon = styled('div')`
   background-image: url('icon/github.png');
   background-position: center center;
   background-size: cover;
-`;
-
-const PythonIcon = styled('div')`
-  width: 80px;
-  height: 80px;
-  background-image: url('icon/python.png');
-  background-position: center center;
-  background-size: cover;
+  @media (max-width: 1024px) {
+    width: 45px;
+    height: 45px;
+  }
+  @media (max-width: 375px) {
+    width: 25px;
+    height: 25px;
+  }
 `;
 
 const Column = styled('div')`
@@ -189,10 +289,6 @@ const Skill = () => {
             <Msg>중급</Msg>
             <Java />
           </Item>
-          <Item>
-            <Msg>초급</Msg>
-            <PythonIcon />
-          </Item>
         </Column>
         <Column>
           <Item>
@@ -212,10 +308,6 @@ const Skill = () => {
           <Item>
             <Msg>중급</Msg>
             <OracleIcon />
-          </Item>
-          <Item>
-            <Msg>중급</Msg>
-            <MysqlIcon />
           </Item>
         </Column>
         <Column>

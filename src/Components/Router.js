@@ -1,10 +1,11 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 import Home from '../Routes/Home';
 import About from '../Routes/About';
 import Project from '../Routes/Project';
 import Skill from '../Routes/Skill';
+import Contact from '../Routes/Contact';
 
 export default () => (
   <Router>
@@ -14,6 +15,7 @@ export default () => (
       <About />
       <Skill />
       <Project />
+      <Contact />
     </>
   </Router>
 );
