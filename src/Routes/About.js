@@ -31,6 +31,7 @@ const Title = styled('div')`
   padding: 10px;
   border-bottom: 2px solid black;
   font-weight: 600;
+  margin-bottom: 20px;
   @media (max-width: 1024px) {
     font-size: 28px;
   }
@@ -39,15 +40,35 @@ const Title = styled('div')`
   }
 `;
 
+const Gridbox = styled('div')`
+  display: grid;
+  grid-template-columns: 1fr 3.5fr;
+`;
+
+const SubTitle = styled('div')`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 24px;
+  @media (max-width: 1024px) {
+    font-size: 22px;
+  }
+  @media (max-width: 375px) {
+    font-size: 12px;
+  }
+`;
+
 const Content = styled('div')`
-  font-size: 18px;
+  font-size: 17px;
   padding: 40px;
   @media (max-width: 1024px) {
-    font-size: 17px;
+    font-size: 16px;
     padding: 25px;
   }
   @media (max-width: 375px) {
-    font-size: 8px;
+    font-size: 7px;
     padding: 15px;
   }
 `;
@@ -57,15 +78,26 @@ const About = () => {
     <>
       <Bout id="about">
         <Title>소개</Title>
-        <Content>
-          충분히 열락의 있음으로써 위하여 설레는 석가는 심장의 되려니와, 보는
-          사막이다. 발휘하기 힘차게 품고 새 뼈 예수는 수 말이다. 인생을 그들의
-          이것이야말로 수 소담스러운 아니다. 못할 전인 끓는 만물은 같지 열매를
-          따뜻한 인생을 거친 끓는다. 위하여서, 꽃이 때까지 바이며, 이것은
-          것이다. 불어 거친 그들은 듣기만 그들의 영락과 싸인 못할 있다. 때까지
-          그와 것은 든 피다. 품었기 안고, 심장의 끓는 무한한 속잎나고,
-          부패뿐이다. 그들은 있는 유소년에게서 있다.
-        </Content>
+        <Gridbox>
+          <SubTitle>
+            <div>즐기는</div>
+            <div>개발자</div>
+          </SubTitle>
+          <Content>
+            <div>
+              19년도 상반기에 교육을 들었을 때 처음 Javascript 웹 프레임워크를
+              접하게 됐고 Javascript에 매력을 느껴 React에 입문 후 프론트엔드
+              개발자가 되기 위해서 노력하고 있습니다.
+            </div>
+            <div>&nbsp;</div>
+            <div>
+              제 목표는 하고자 하는 일을 즐길 줄 아는 개발자가 되는 것입니다.
+              즐김으로써 더 높은 곳으로 가고자 하는 동기도 노력도 자연스레
+              따라온다고 생각합니다. 이를 바탕으로 자신의 실력에 당당한 개발자가
+              되고 싶습니다.
+            </div>
+          </Content>
+        </Gridbox>
       </Bout>
     </>
   );

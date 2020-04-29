@@ -231,10 +231,12 @@ const Project = () => {
           <ProjectInfo>
             <ProjectTitle>Movie Review App</ProjectTitle>
             <Content>
-              {' '}
-              충분히 열락의 있음으로써 위하여 설레는 석가는 심장의 되려니와,
-              보는 사막이다. 발휘하기 힘차게 품고 새 뼈 예수는 수 말이다. 인생을
-              그들의 이것이야말로 수 소담스러운 아니다.
+              <div>MERN Stack으로 개발한 영화 리뷰 사이트</div>
+              <div>
+                {' '}
+                - 로그인, 회원가입 | 영화 검색 및 상세 정보 | 리뷰와 댓글 작성,
+                수정, 삭제 | 프로필 편집 가능
+              </div>
             </Content>
             <SkillList>
               <SkillItem>React</SkillItem>
@@ -279,10 +281,10 @@ const Project = () => {
           <ProjectInfo>
             <ProjectTitle>혼자하는 인테리어</ProjectTitle>
             <Content>
-              {' '}
-              충분히 열락의 있음으로써 위하여 설레는 석가는 심장의 되려니와,
-              보는 사막이다. 발휘하기 힘차게 품고 새 뼈 예수는 수 말이다. 인생을
-              그들의 이것이야말로 수 소담스러운 아니다.
+              <div>'오늘의 집' 사이트 클론 코딩</div>
+              <div>
+                - Javscript와 jQuery를 이용하여 '오늘의 집' 사이트를 구현
+              </div>
             </Content>
             <SkillList>
               <SkillItem>Java</SkillItem>
@@ -306,10 +308,11 @@ const Project = () => {
           <ProjectInfo>
             <ProjectTitle>Youngflix</ProjectTitle>
             <Content>
-              {' '}
-              충분히 열락의 있음으로써 위하여 설레는 석가는 심장의 되려니와,
-              보는 사막이다. 발휘하기 힘차게 품고 새 뼈 예수는 수 말이다. 인생을
-              그들의 이것이야말로 수 소담스러운 아니다.
+              <div>
+                현재 상영작, 상영 예정작, 영화 검색 및 상세 정보를 볼 수 있는
+                사이트
+              </div>
+              <div>- themoviedb api를 이용</div>
             </Content>
             <SkillList>
               <SkillItem>React</SkillItem>
@@ -341,10 +344,9 @@ const Project = () => {
           <ProjectInfo>
             <ProjectTitle>Guess mine</ProjectTitle>
             <Content>
-              {' '}
-              충분히 열락의 있음으로써 위하여 설레는 석가는 심장의 되려니와,
-              보는 사막이다. 발휘하기 힘차게 품고 새 뼈 예수는 수 말이다. 인생을
-              그들의 이것이야말로 수 소담스러운 아니다.
+              <div>
+                Socket.io를 이용한 실시간 채팅 및 그림 그리기를 구현한 사이트
+              </div>
             </Content>
             <SkillList>
               <SkillItem>Javascript</SkillItem>
@@ -378,9 +380,7 @@ const Project = () => {
             <ProjectTitle>CSS Projects</ProjectTitle>
             <Content>
               {' '}
-              충분히 열락의 있음으로써 위하여 설레는 석가는 심장의 되려니와,
-              보는 사막이다. 발휘하기 힘차게 품고 새 뼈 예수는 수 말이다. 인생을
-              그들의 이것이야말로 수 소담스러운 아니다.
+              <div>CSS 연습작 모음</div>
             </Content>
             <SkillList>
               <SkillItem>CSS3</SkillItem>
