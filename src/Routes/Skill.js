@@ -296,7 +296,7 @@ const Skill = () => {
             <ReactIcon />
           </Item>
           <Item>
-            <Msg>중급</Msg>
+            <Msg>초급</Msg>
             <JqueryIcon />
           </Item>
         </Column>

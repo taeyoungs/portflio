@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Portflio</title>
+        <title>Portfolio</title>
       </Helmet>
       <Main id="home">
         <BackColor>
