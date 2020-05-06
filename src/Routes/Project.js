@@ -219,6 +219,17 @@ const SiteIcon = styled(Site)`
   }
 `;
 
+const SubInfo = styled('span')`
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 300;
+`;
+
+const SubContent = styled('div')`
+  margin-bottom: 5px;
+`;
+
 const Project = () => {
   return (
     <>
@@ -231,11 +242,11 @@ const Project = () => {
           <ProjectInfo>
             <ProjectTitle>Movie Review App</ProjectTitle>
             <Content>
-              <div>MERN Stack으로 개발한 영화 리뷰 사이트</div>
+              <SubContent>MERN Stack으로 개발한 영화 리뷰 사이트</SubContent>
               <div>
                 {' '}
-                - 로그인, 회원가입 | 영화 검색 및 상세 정보 | 리뷰와 댓글 작성,
-                수정, 삭제 | 프로필 편집 가능
+                ( 로그인, 회원가입 | 영화 검색 및 상세 정보 | 리뷰와 댓글 작성,
+                수정, 삭제 | 프로필 편집 )
               </div>
             </Content>
             <SkillList>
@@ -279,16 +290,23 @@ const Project = () => {
         <GridItem>
           <ProjectTwo />
           <ProjectInfo>
-            <ProjectTitle>혼자하는 인테리어</ProjectTitle>
+            <ProjectTitle>
+              혼자하는 인테리어<SubInfo>(교육기관 팀프로젝트)</SubInfo>
+            </ProjectTitle>
             <Content>
-              <div>'오늘의 집' 사이트 클론 코딩</div>
-              <div>
-                - Javscript와 jQuery를 이용하여 '오늘의 집' 사이트를 구현
-              </div>
+              <SubContent>'오늘의 집' 사이트 클론 코딩</SubContent>
+              <SubContent>
+                - Java, Javscript와 jQuery를 이용하여 '오늘의 집' 사이트를 구현
+              </SubContent>
+              <SubContent>
+                ( 로그인, 회원가입, 정보수정 | 게시글 업로드, 목록 | 관리자
+                페이지 )
+              </SubContent>
             </Content>
             <SkillList>
               <SkillItem>Java</SkillItem>
-              <SkillItem>Oracle</SkillItem>
+              <SkillItem>Jsp</SkillItem>
+              <SkillItem>Oracle DB</SkillItem>
               <SkillItem>Javacsript</SkillItem>
               <SkillItem>AWS RDS</SkillItem>
             </SkillList>
@@ -312,7 +330,6 @@ const Project = () => {
                 현재 상영작, 상영 예정작, 영화 검색 및 상세 정보를 볼 수 있는
                 사이트
               </div>
-              <div>- themoviedb api를 이용</div>
             </Content>
             <SkillList>
               <SkillItem>React</SkillItem>
@@ -372,28 +389,6 @@ const Project = () => {
                 바로 가기
               </a>
             </SiteLink>
-          </ProjectInfo>
-        </GridItem>
-        <GridItem>
-          <ProjectFive />
-          <ProjectInfo>
-            <ProjectTitle>CSS Projects</ProjectTitle>
-            <Content>
-              {' '}
-              <div>CSS 연습작 모음</div>
-            </Content>
-            <SkillList>
-              <SkillItem>CSS3</SkillItem>
-            </SkillList>
-            <GithubLink>
-              <a
-                href="https://github.com/taeyoungs/css-practice-projects"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GithubIcon />
-              </a>
-            </GithubLink>
           </ProjectInfo>
         </GridItem>
       </GridBox>

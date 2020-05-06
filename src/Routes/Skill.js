@@ -21,7 +21,7 @@ const TitleContent = styled('span')`
 
 const SkillList = styled('div')`
   width: 100%;
-  height: 800px;
+  height: 700px;
   background-color: #f2f2f2;
   margin: 30px 0;
   display: grid;
