@@ -91,15 +91,6 @@ const ProjectFour = styled('div')`
   }
 `;
 
-const ProjectFive = styled('div')`
-  background-image: url('screenshot/cssprojects.png');
-  background-position: top center;
-  background-size: cover;
-  @media (max-width: 375px) {
-    background-position: top center;
-  }
-`;
-
 const ProjectInfo = styled('div')`
   display: flex;
   flex-direction: column;
@@ -112,7 +103,7 @@ const ProjectInfo = styled('div')`
 `;
 
 const ProjectTitle = styled('div')`
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 25px;
   font-weight: 600;
   @media (max-width: 1024px) {
@@ -159,19 +150,20 @@ const SkillItem = styled('div')`
 
 const GithubLink = styled('div')`
   margin-bottom: 30px;
+  font-size: 13px;
 
   @media (max-width: 1024px) {
     font-size: 12px;
   }
   @media (max-width: 375px) {
-    font-size: 8px;
+    font-size: 10px;
     margin-bottom: 15px;
   }
 `;
 
 const GithubIcon = styled(Github)`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: black;
   margin-right: 5px;
   cursor: pointer;
@@ -179,12 +171,12 @@ const GithubIcon = styled(Github)`
     opacity: 0.5;
   }
   @media (max-width: 1024px) {
-    width: 30px;
-    height: 30px;
-  }
-  @media (max-width: 375px) {
     width: 20px;
     height: 20px;
+  }
+  @media (max-width: 375px) {
+    width: 25px;
+    height: 25px;
   }
 `;
 
@@ -192,42 +184,51 @@ const SiteLink = styled('div')`
   display: flex;
   align-items: center;
   color: black;
+  font-size: 13px;
+  width: 170px;
   cursor: pointer;
   :hover {
     opacity: 0.5;
   }
   @media (max-width: 1024px) {
     font-size: 12px;
+    width: 130px;
   }
   @media (max-width: 375px) {
     font-size: 8px;
+    width: 100px;
   }
 `;
 
 const SiteIcon = styled(Site)`
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   color: black;
   margin-right: 10px;
   @media (max-width: 1024px) {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
   @media (max-width: 375px) {
-    width: 10px;
-    height: 10px;
+    width: 18px;
+    height: 18px;
   }
-`;
-
-const SubInfo = styled('span')`
-  display: inline-block;
-  margin-left: 5px;
-  font-size: 15px;
-  font-weight: 300;
 `;
 
 const SubContent = styled('div')`
   margin-bottom: 5px;
+`;
+
+const Info = styled('div')`
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 8.5px;
+  }
 `;
 
 const Project = () => {
@@ -241,22 +242,23 @@ const Project = () => {
           <ProjectOne />
           <ProjectInfo>
             <ProjectTitle>Movie Review App</ProjectTitle>
+            <Info>
+              ( React/Nodejs/HTML5/CSS3/JS, MongoDB, VSCode, Chrome 환경에서
+              작업하였습니다. )
+            </Info>
             <Content>
-              <SubContent>MERN Stack으로 개발한 영화 리뷰 사이트</SubContent>
-              <div>
-                {' '}
-                ( 로그인, 회원가입 | 영화 검색 및 상세 정보 | 리뷰와 댓글 작성,
-                수정, 삭제 | 프로필 편집 )
-              </div>
+              <SubContent>
+                특정 영화에 대한 리뷰 및 리뷰에 대한 댓글을 남길 수 있는
+                사이트입니다.
+              </SubContent>
+              <SubContent>
+                React와 Nodejs를 기반으로 웹과 API 서버 전체를 개발하였습니다.
+              </SubContent>
+              <SubContent>
+                Cafe24에서 도메인 관리를 하였고, AWS EC2에 배포 및 S3 서비스가
+                적용되었습니다.
+              </SubContent>
             </Content>
-            <SkillList>
-              <SkillItem>React</SkillItem>
-              <SkillItem>Express</SkillItem>
-              <SkillItem>Nodejs</SkillItem>
-              <SkillItem>MongoDB</SkillItem>
-              <SkillItem>AWS EC2</SkillItem>
-              <SkillItem>AWS S3</SkillItem>
-            </SkillList>
             <GithubLink>
               <a
                 href="https://github.com/taeyoungs/review-app-client"
@@ -281,8 +283,7 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiteIcon />
-                바로 가기
+                <SiteIcon />웹 링크 바로 가기
               </a>
             </SiteLink>
           </ProjectInfo>
@@ -290,26 +291,21 @@ const Project = () => {
         <GridItem>
           <ProjectTwo />
           <ProjectInfo>
-            <ProjectTitle>
-              혼자하는 인테리어<SubInfo>(교육기관 팀프로젝트)</SubInfo>
-            </ProjectTitle>
+            <ProjectTitle>혼자하는 인테리어</ProjectTitle>
+            <Info>
+              ( Java Spring/HTML5/CSS3/JS/jQuery, OracleDB, Eclipse, Chrome
+              환경에서 작업하였습니다. )
+            </Info>
             <Content>
-              <SubContent>'오늘의 집' 사이트 클론 코딩</SubContent>
               <SubContent>
-                - Java, Javscript와 jQuery를 이용하여 '오늘의 집' 사이트를 구현
+                '오늘의 집' 사이트 클론 코딩 (교육기관 팀프로젝트)
               </SubContent>
               <SubContent>
-                ( 로그인, 회원가입, 정보수정 | 게시글 업로드, 목록 | 관리자
-                페이지 )
+                Java Spring 프레임워크를 기반으로 User/Admin, 게시글, 장바구니
+                웹 및 서버 API를 개발하였습니다.
               </SubContent>
+              <SubContent>AWS RDS 서비스가 적용되었습니다.</SubContent>
             </Content>
-            <SkillList>
-              <SkillItem>Java</SkillItem>
-              <SkillItem>Jsp</SkillItem>
-              <SkillItem>Oracle DB</SkillItem>
-              <SkillItem>Javacsript</SkillItem>
-              <SkillItem>AWS RDS</SkillItem>
-            </SkillList>
             <GithubLink>
               <a
                 href="https://github.com/taeyoungs/AcornTeamProject"
@@ -325,16 +321,19 @@ const Project = () => {
           <ProjectThree />
           <ProjectInfo>
             <ProjectTitle>Youngflix</ProjectTitle>
+            <Info>
+              ( React/HTML5/CSS3/JS, VSCode, Chrome 환경에서 작업하였습니다. )
+            </Info>
             <Content>
-              <div>
+              <SubContent>
                 현재 상영작, 상영 예정작, 영화 검색 및 상세 정보를 볼 수 있는
-                사이트
-              </div>
+                사이트입니다.
+              </SubContent>
+              <SubContent>
+                React를 사용하여 웹 전체를 개발하였으며, Netlify에
+                배포되었습니다.
+              </SubContent>
             </Content>
-            <SkillList>
-              <SkillItem>React</SkillItem>
-              <SkillItem>CSS3</SkillItem>
-            </SkillList>
             <GithubLink>
               <a
                 href="https://github.com/taeyoungs/youngflix"
@@ -350,8 +349,7 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiteIcon />
-                바로 가기
+                <SiteIcon />웹 링크 바로 가기
               </a>
             </SiteLink>
           </ProjectInfo>
@@ -360,16 +358,19 @@ const Project = () => {
           <ProjectFour />
           <ProjectInfo>
             <ProjectTitle>Guess mine</ProjectTitle>
+            <Info>
+              ( Nodejs/Gulp/HTML5/CSS3/JS, VSCode, Chrome 환경에서
+              작업하였습니다. )
+            </Info>
             <Content>
-              <div>
-                Socket.io를 이용한 실시간 채팅 및 그림 그리기를 구현한 사이트
-              </div>
+              <SubContent>
+                실시간 채팅 및 그림 그리기를 통한 퀴즈 사이트입니다.
+              </SubContent>
+              <SubContent>
+                Socket.io를 활용해보기 위해 Nodejs 이용하여 개발하였으며,
+                Heroku에 배포되었습니다.
+              </SubContent>
             </Content>
-            <SkillList>
-              <SkillItem>Javascript</SkillItem>
-              <SkillItem>Nodejs</SkillItem>
-              <SkillItem>Socket.io</SkillItem>
-            </SkillList>
             <GithubLink>
               <a
                 href="https://github.com/taeyoungs/guess-mine"
@@ -385,8 +386,7 @@ const Project = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <SiteIcon />
-                바로 가기
+                <SiteIcon />웹 링크 바로 가기
               </a>
             </SiteLink>
           </ProjectInfo>

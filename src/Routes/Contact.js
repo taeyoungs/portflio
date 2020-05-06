@@ -61,8 +61,8 @@ const EmailIcon = styled(EmailOutline)`
     height: 35px;
   }
   @media (max-width: 375px) {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -76,8 +76,8 @@ const GitIcon = styled(Git)`
     height: 35px;
   }
   @media (max-width: 375px) {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -91,8 +91,8 @@ const PhoneIcon = styled(Phone)`
     height: 35px;
   }
   @media (max-width: 375px) {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
   }
 `;
 

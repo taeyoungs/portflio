@@ -15,7 +15,7 @@ const Bout = styled('div')`
   line-height: 1.5;
   @media (max-width: 1024px) {
     width: calc(100% - 300px);
-    height: 280px;
+    height: 300px;
     padding: 20px;
   }
   @media (max-width: 375px) {
@@ -33,9 +33,11 @@ const Title = styled('div')`
   font-weight: 600;
   margin-bottom: 20px;
   @media (max-width: 1024px) {
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 15px;
   }
   @media (max-width: 375px) {
+    margin-bottom: 10px;
     font-size: 15px;
   }
 `;
@@ -56,7 +58,7 @@ const SubTitle = styled('div')`
     font-size: 22px;
   }
   @media (max-width: 375px) {
-    font-size: 12px;
+    font-size: 11px;
   }
 `;
 
@@ -65,11 +67,11 @@ const Content = styled('div')`
   padding: 40px;
   @media (max-width: 1024px) {
     font-size: 16px;
-    padding: 25px;
+    padding: 20px;
   }
   @media (max-width: 375px) {
     font-size: 7px;
-    padding: 15px;
+    padding: 10px;
   }
 `;
 

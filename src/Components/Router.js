@@ -14,7 +14,6 @@ export default () => (
       <Header />
       <Home />
       <About />
-      <Skill />
       <Project />
       <Contact />
       <GoTop />

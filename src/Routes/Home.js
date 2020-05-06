@@ -28,13 +28,33 @@ const BackColor = styled('div')`
 `;
 
 const MainContent = styled('div')`
-  font-size: 35px;
+  font-size: 22px;
   color: white;
   @media (max-width: 1024px) {
-    font-size: 32px;
+    font-size: 19px;
   }
   @media (max-width: 375px) {
-    font-size: 20px;
+    font-size: 7px;
+  }
+`;
+
+const SubContent = styled('div')`
+  margin: 10px;
+`;
+
+const ALink = styled('a')`
+  color: white;
+`;
+
+const Subject = styled('span')`
+  display: inline-block;
+  text-align: center;
+  width: 73px;
+  @media (max-width: 1024px) {
+    width: 60px;
+  }
+  @media (max-width: 375px) {
+    width: 40px;
   }
 `;
 
@@ -46,7 +66,25 @@ const Home = () => {
       </Helmet>
       <Main id="home">
         <BackColor>
-          <MainContent>Developer 장태영</MainContent>
+          <MainContent>
+            <SubContent>
+              <Subject>이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름</Subject> : 장태영
+              (Jang Taeyoung)
+            </SubContent>
+            <SubContent>
+              <Subject>거&nbsp;주&nbsp;지</Subject> : 경기도 성남시 분당구
+            </SubContent>
+            <SubContent>
+              <Subject>Github</Subject> :{' '}
+              <ALink
+                href="https://github.com/taeyoungs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://github.com/taeyoungs
+              </ALink>
+            </SubContent>
+          </MainContent>
         </BackColor>
       </Main>
     </>

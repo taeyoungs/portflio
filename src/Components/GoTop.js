@@ -19,12 +19,34 @@ const ArrowBox = styled('div')`
   :hover {
     opacity: 1;
   }
+  @media (max-width: 1024px) {
+    width: 40px;
+    height: 40px;
+  }
+  @media (max-width: 375px) {
+    right: 35px;
+    bottom: 35px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    :hover {
+      opacity: 0.5;
+    }
+  }
 `;
 
 const ArrowIcon = styled(ArrowToTop)`
   width: 30px;
   height: 30px;
   color: white;
+  @media (max-width: 1024px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media (max-width: 375px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 const GoTop = () => {

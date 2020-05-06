@@ -185,11 +185,6 @@ const Header = ({ location: { hash } }) => {
               소개
             </MLink>
           </Item>
-          <Item current={hash === '#skill'}>
-            <MLink smooth to="/#skill">
-              기술
-            </MLink>
-          </Item>
           <Item current={hash === '#project'}>
             <MLink smooth to="/#project">
               프로젝트
@@ -213,11 +208,6 @@ const Header = ({ location: { hash } }) => {
           <MItem current={hash === '#about'}>
             <MLink smooth to="/#about">
               소개
-            </MLink>
-          </MItem>
-          <MItem current={hash === '#skill'}>
-            <MLink smooth to="/#skill">
-              기술
             </MLink>
           </MItem>
           <MItem current={hash === '#project'}>
