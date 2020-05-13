@@ -34,7 +34,7 @@ const MainContent = styled('div')`
     font-size: 19px;
   }
   @media (max-width: 375px) {
-    font-size: 7px;
+    font-size: 9px;
   }
 `;
 

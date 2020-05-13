@@ -35,7 +35,7 @@ const MHeaderMenu = styled('header')`
     display: flex;
     flex-direction: column;
     width: ${(props) => (props.state ? '130px' : '60px')};
-    height: ${(props) => (props.state ? '240px' : '60px')};
+    height: ${(props) => (props.state ? '210px' : '60px')};
     z-index: 10;
     font-size: 18px;
     background-color: rgba(20, 20, 20, 0.8);
@@ -50,7 +50,7 @@ const MHeaderMenu = styled('header')`
     display: flex;
     flex-direction: column;
     width: ${(props) => (props.state ? '65px' : '30px')};
-    height: ${(props) => (props.state ? '120px' : '30px')};
+    height: ${(props) => (props.state ? '100px' : '30px')};
     z-index: 10;
     font-size: 9px;
     background-color: rgba(20, 20, 20, 0.8);

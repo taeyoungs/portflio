@@ -231,6 +231,18 @@ const Info = styled('div')`
   }
 `;
 
+const Period = styled('div')`
+  font-size: 15px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  @media (max-width: 1024px) {
+    font-size: 14px;
+  }
+  @media (max-width: 375px) {
+    font-size: 8.5px;
+  }
+`;
+
 const Project = () => {
   return (
     <>
@@ -242,6 +254,7 @@ const Project = () => {
           <ProjectOne />
           <ProjectInfo>
             <ProjectTitle>Movie Review App</ProjectTitle>
+            <Period>개발기간 2020.03.03 ~ 2020.04.21</Period>
             <Info>
               ( React/Nodejs/HTML5/CSS3/JS, MongoDB, VSCode, Chrome 환경에서
               작업하였습니다. )
@@ -292,13 +305,14 @@ const Project = () => {
           <ProjectTwo />
           <ProjectInfo>
             <ProjectTitle>혼자하는 인테리어</ProjectTitle>
+            <Period>개발기간 2019.07.24 ~ 2019.08.01</Period>
             <Info>
               ( Java Spring/HTML5/CSS3/JS/jQuery, OracleDB, Eclipse, Chrome
               환경에서 작업하였습니다. )
             </Info>
             <Content>
               <SubContent>
-                '오늘의 집' 사이트 클론 코딩 (교육기관 팀프로젝트)
+                '오늘의 집' 사이트 클론 코딩 (교육기관 팀프로젝트/4명)
               </SubContent>
               <SubContent>
                 Java Spring 프레임워크를 기반으로 User/Admin, 게시글, 장바구니
@@ -321,6 +335,7 @@ const Project = () => {
           <ProjectThree />
           <ProjectInfo>
             <ProjectTitle>Youngflix</ProjectTitle>
+            <Period>개발기간 2019.11.20 ~ 2019.12.24</Period>
             <Info>
               ( React/HTML5/CSS3/JS, VSCode, Chrome 환경에서 작업하였습니다. )
             </Info>
@@ -358,6 +373,7 @@ const Project = () => {
           <ProjectFour />
           <ProjectInfo>
             <ProjectTitle>Guess mine</ProjectTitle>
+            <Period>개발기간 2019.10.29 ~ 2019.11.12</Period>
             <Info>
               ( Nodejs/Gulp/HTML5/CSS3/JS, VSCode, Chrome 환경에서
               작업하였습니다. )
